@@ -9,8 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Controllers (AuthController, SubjectsController, itd.)
 builder.Services.AddControllers();
 
+
 // SQLite baza
-builder.Services.AddDbContext<AppDbContext>(options =>
+builder.Services.AddDbContSext<AppDbContext>(options =>
     options.UseSqlite("Data Source=studyplanner.db"));
 
 // CORS - dozvoli React frontendu da komunicira sa backendom
