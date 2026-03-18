@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using backend.Data;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Controllers (AuthController, SubjectsController, itd.)
